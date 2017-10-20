@@ -1,0 +1,157 @@
+body{
+	background-color: rebeccapurple;
+}
+.ft-red{
+	color:red;
+}
+.content{
+	margin-left: 20px;
+    background: #ccc;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    max-width: 450px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 12px;
+
+}
+.self-content-rt{
+	display: block;
+	clear: both;
+	.con-rt{
+		float:right;
+		margin-right: 20px
+	}
+	.content{
+		float:right;
+		margin-left:0;
+		margin-right: 20px;
+		background-color: goldenrod;
+	}
+}
+.self-content-lt{
+	clear: both;
+	display: block;
+	.con-lt{
+		float:left;
+		margin-left: 20px
+	}
+	.content{
+	float:left;	
+	}
+}
+.chat{
+	width:800px;
+	margin:50px auto;
+	.chat-h1{
+		text-align:center;
+		padding:20px 0;
+		font-size: 30px;
+        color: #fff;
+	}
+}
+.chat-con{
+	padding-top: 15px;
+	width:563px;
+	height:500px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	max-height: 500px;
+    overflow-y: scroll;
+}
+.user-chat{
+	float:left;
+}
+.user-list{
+	margin:40px 0 0 30px;
+	width:200px;
+	height:561px;
+	border:1px solid #ddd;
+	float:left;
+	background-color: #fff;
+}
+.chat-num{
+	padding:10px 0;
+	color: #fff;
+}
+.active{
+	background-color:bisque;
+	}
+.user-list-h3{
+	text-align: center;
+	font-weight: bold;
+	}
+.user-name{
+	text-align:center;
+	li{
+		&:hover{
+			cursor:pointer;
+		}
+	}
+}
+.control{
+	margin-top:-1px;
+	.chat-text{
+	float:left;
+	width:500px;
+	height:45px;
+	line-height: 45px;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	text-indent: 12px;
+}
+.sending-btn{
+	float:left;
+	width: 63px;
+    height: 47px;
+    line-height: 47px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    &:hover{
+    	cursor: pointer;
+    }
+}
+}
+
+.login{
+    position: fixed;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -130px;
+    margin-top: -25px;
+    z-index: 2;
+	&-name{
+		float:left;
+		border: 1px solid rebeccapurple;
+		width:150px;
+		height:30px;
+		font-size: 12px;
+		line-height: 30px;
+		text-indent: 12px;
+	}
+	&-btn{
+		float:left;
+		border: 1px solid rebeccapurple;
+		font-size: 12px;
+		height:32px;
+		width:80px;
+		line-height: 32px;
+		margin-left:-2px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+#overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  opacity: .3;
+}

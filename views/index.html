@@ -1,0 +1,27 @@
+<%include header.html %>
+<div class="login">
+	<input type="text" class="login-name" placeholder="请输入昵称" />
+	<button class="login-btn">登录</button>
+</div>
+<div class="chat">
+<h1 class="chat-h1"><%= title %></h1>
+<div class="user-chat">
+	<div class="chat-num">在线人数：<span class="num">0</span></div>
+	<div class="chat-con-wrap">
+		<div class="chat-con">
+		</div>
+		<div class="control">
+			<input type="text" class="chat-text" placeholder="请输入内容" />
+			<button class="sending-btn">发送</button>
+		</div>
+	</div>
+</div>
+<div class="user-list">
+	<h3 class="user-list-h3">用户列表</h3>
+	<ul class="user-name">
+	</ul>
+</div>
+</div>
+<div id="overlay">
+</div>
+<%include footer.html %>
