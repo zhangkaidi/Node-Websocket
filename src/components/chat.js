@@ -1,7 +1,8 @@
+alert(2);
 $(function(){
+  alert(2);
   var socket;
   var $priUser; //目标用户
-
   $('.login-btn').click(function(){
      socket = io();
       var userName =$.trim($('.login-name').val());

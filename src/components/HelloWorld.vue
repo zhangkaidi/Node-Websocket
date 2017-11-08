@@ -1,25 +1,35 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+<div id="content">
+  <div class="login">
+	<input type="text" class="login-name" placeholder="请输入昵称" />
+	<button class="login-btn">登录</button>
+</div>
+<div class="chat">
+<h1 class="chat-h1"></h1>
+<div class="user-chat">
+	<div class="chat-num">在线人数：<span class="num">0</span></div>
+	<div class="chat-con-wrap">
+		<div class="chat-con">
+		</div>
+		<div class="control">
+			<input type="text" class="chat-text" placeholder="请输入内容" />
+			<button class="sending-btn">发送</button>
+		</div>
+	</div>
+</div>
+<div class="user-list">
+	<h3 class="user-list-h3">用户列表</h3>
+	<ul class="user-name">
+	</ul>
+</div>
+</div>
+<div id="overlay">
+</div>
+</div>
 </template>
-
+<script src="./jquery-1.12.4.min.js" ></script>
+<script src="./chat.js" ></script>
+<script src="/socket.io/socket.io.js"></script>
 <script>
 export default {
   name: 'HelloWorld',
@@ -30,24 +40,8 @@ export default {
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+ @import './chat.css';
+ @import './reset.css';
 </style>
