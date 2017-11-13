@@ -4,7 +4,8 @@
   "description": "* 匿名登录\r * 群聊\r * 私聊\r * 在线人数\r * 在线用户列表",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/zhangkaidi/websocket-node/issues"
   },
-  "homepage": "https://github.com/zhangkaidi/websocket-node#readme"
+  "homepage": "https://github.com/zhangkaidi/websocket-node#readme",
+  "devDependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
 }
