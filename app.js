@@ -32,10 +32,7 @@ io.on('connection', function(socket){
 	    	}else{
 	    		num++;
 	    		users[socket.name] = socket.id;
-	    		console.log(users);
-	    		console.log('a user connect');
 	    		io.emit('num',num);
-			    console.log('可以链接!')
 			    io.emit('loginback',users);
 	    	}
 	})
