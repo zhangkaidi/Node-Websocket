@@ -12,7 +12,7 @@
           if (userName != "") {
             socket.emit('login', userName);
             socketNode.loginBack(); //返回信息
-            socketNode.lineNmber();//在线人数
+            socketNode.lineNumber();//在线人数
           }
         })
       },
@@ -36,7 +36,7 @@
           $('.user-list ul').append(msg);
         })
       },
-      lineNmber: function () {
+      lineNumber: function () {
         socket.on('num', function (data) {
           $('.num').text(data);
         })
